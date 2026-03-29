@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #000000;
     min-height: 100vh;
 
@@ -200,33 +200,38 @@ header a {
 ========================= */
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 40px;
+    justify-content: center;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1800px) {
     .works-grid {
-        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, 345px); 
     }
+
 }
 
 .work-item {
     display: block;
     text-decoration: none;
     color: black;
-
-    border: 2px solid rgb(31, 94, 46);
+    width: 100%;
+    max-width: 345px;
+    border: 4px solid rgb(31, 94, 46);
     border-radius: 12px;
     padding: 15px;
     background-color: rgb(230, 240, 234);
-
     transition: 0.3s;
 }
 
 .work-item img {
-    width: 100%;
+    width: 305px;
     height: 250px;
     object-fit: cover;
+
 }
 
 .work-item h3 {
@@ -241,8 +246,8 @@ header a {
 
 /* Hover effect */
 .work-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 /* =========================
@@ -271,6 +276,17 @@ footer {
     right: 0;
 }
 /* =========================
+   PROJECT PAGE BACKGROUND
+========================= */
+.project-page {
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        rgb(230, 240, 234) 5%,
+        rgb(31, 94, 46) 100%
+    );
+}
+/* =========================
    PROJECT PAGE
 ========================= */
 .project-section {
@@ -284,21 +300,29 @@ footer {
     height: auto;
 
     border-radius: 10px;
-    border: 2px solid rgb(31, 94, 46);
+    border: 5px solid rgb(31, 94, 46);
 
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+.project-image2 {
+    width: 100%;
+    max-width: min(75vw, 900px);
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Larger cover image */
 .project-image.large {
     max-width: 1000px;
 }
 
 .project-text {
-    margin-top: 15px;
-    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
     line-height: 1.6;
     max-width: 700px;
     margin-left: auto;
@@ -306,4 +330,27 @@ footer {
 }
 .project-section {
     margin-bottom: 60px;
+}
+
+/* WENDIGO PAGE BACKGROUND */
+.wendigo-page {
+    background: 
+        linear-gradient(to top, black 0%, white 20%, white 80%, black 100%);
+    /* keeps text area solid white in center and fades at top & bottom */
+    color: black;
+    min-height: 100vh;
+     padding-top: 300px; /* top gap */
+    padding-bottom: 300px;
+}
+.story-section {
+    max-width: 800px;
+    margin: 120px auto 50px auto; 
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.story-section p {
+    text-indent: 2em; 
+    margin-bottom: 1.5em; 
 }
