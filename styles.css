@@ -257,3 +257,18 @@ footer {
     border-top: 2px solid rgb(31, 94, 46);
     color: rgb(31, 94, 46);
 }
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(31, 94, 46);
+    padding-top: 80px;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.side-menu.open {
+    right: 0;
+}
