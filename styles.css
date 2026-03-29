@@ -225,10 +225,8 @@ header a {
 
 .work-item img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    height: 250px;
+    object-fit: cover;
 }
 
 .work-item h3 {
