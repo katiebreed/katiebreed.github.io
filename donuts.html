@@ -59,6 +59,13 @@
     <footer>
         <p>© 2026 Katie Portfolio</p>
     </footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const sideMenu = document.querySelector('.side-menu');
 
+    hamburger.addEventListener('click', () => {
+        sideMenu.classList.toggle('open');
+    });
+</script>
 </body>
 </html>
