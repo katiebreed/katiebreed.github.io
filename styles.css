@@ -223,7 +223,7 @@ header a {
     transition: 0.3s;
 }
 
-..work-item img {
+.work-item img {
     width: 100%;
     height: auto;
     object-fit: contain;
